@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soal Nomor 3</title>
+</head>
+<script src="jquery-3.6.0.min.js"> //memanggil libary jquery yang berada satu file dengan file ini</script>
+<script type="text/javascript" > //deklarasi teks dalam javascript
+$(document).ready(function(){ //memastikan semua elemen yang dibagikan ditampilkan semua halaman web
+	$(".fdout").click(function(){
+		$("#kotak").fadeOut();
+	});
+	$(".fdto").click(function(){
+		$("#kotak").fadeTo("slow",0.3);
+	});
+	$(".fdin").click(function(){
+		$("#kotak").fadeIn();
+	});
+	
+});
+</script>
+<style type="text/css">
+	div{
+		width: 200px;
+		height:  150px;
+		background-color: yellow;
+		border: 2px solid black; 
+	}
+</style>
+<body>
+<div id="kotak"></div>
+<br><br>
+<button class="fdout">fade Out</button>
+<button class="fdin">fade In</button>
+<button class="fdto">fade to 0.3</button>
+</body>
+</html>
