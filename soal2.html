@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soal Nomor 2</title>
+</head>
+<script src="jquery-3.6.0.min.js"> //memanggil libary jquery yang berada satu file dengan file ini</script>
+<script type="text/javascript" > //deklarasi teks dalam javascript
+$(document).ready(function(){ //memastikan semua elemen yang dibagikan ditampilkan semua halaman web
+	$("div").dblclick(function(){
+		$(this).css("background-color","red");
+	});
+});
+</script>
+<style type="text/css">
+	div{
+		width: 100px;
+		height:  100px;
+		background-color: yellow;
+		cursor: pointer;
+		display: inline-block;
+		margin-left:  5px;
+	}
+</style>
+<body>
+<h3>Klik 2x pada setiap kotak untuk mengubah warnanya</h3>
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<div id="box4"></div>
+</body>
+</html>
