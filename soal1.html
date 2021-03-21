@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soal Nomor 1</title>
+<script src="jquery-3.6.0.min.js"> //memanggil libary jquery yang berada satu file dengan file ini</script>
+<script type="text/javascript" > //deklarasi teks dalam javascript
+$(document).ready(function(){ //memastikan semua elemen yang dibagikan ditampilkan semua halaman web
+	$(".sembunyi").click(function(){
+		$("#foto").hide("slow");
+	});
+	$(".tampil").click(function(){
+		$("#foto").show("slow");
+	});
+	$(".sembunyi1").click(function(){
+		$("#foto1").hide("slow");
+	});
+	$(".tampil1").click(function(){
+		$("#foto1").show("slow");
+	});
+});
+</script>
+<style type="text/css">
+	#foto{
+		width: 250px;
+		height: 250px;
+	}
+	#foto1{
+		width: 250px;
+		height: 250px;
+	}
+</style>
+</head>
+<body>
+<button class="sembunyi">Sembunyikan</button>
+<button class="tampil">Tampilkan</button>
+<br><br>
+<button class="sembunyi1">Sembunyikan</button>
+<button class="tampil1">Tampilkan</button>
+<p><img id="foto" src="logo.png"></p>
+<p><img id="foto1" src="peluk.jpg"></p>
+</body>
+</html>
