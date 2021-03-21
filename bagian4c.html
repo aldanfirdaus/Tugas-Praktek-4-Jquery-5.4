@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"> //memanggil libary jquery yang berada satu file dengan file ini</script>
+<script type="text/javascript" > //deklarasi teks dalam javascript
+$(document).ready(function(){ //memastikan semua elemen yang dibagikan ditampilkan semua halaman web
+	$("#daftar").addClass("merahkuning"); //memilih selector div untuk ditambahkan kelas biru
+	$(".subdaftar").addClass("kuninghitam"); //memilih selector class untuk ditambahkan kelas kuninghitam
+});
+</script>
+<style type="text/css">
+	.merahkuning{
+		color: red;
+		font-weight: bold;
+		background-color: yellow;
+		padding: 3px;
+	}
+	.kuninghitam{
+		color: blue;
+		background-color: green;
+	}
+</style>	
+</head>
+<body>
+<div>
+	<p>paragraf pertama</p>
+</div>
+<div>
+	<ul id="daftar">
+		<li>item 1</li>
+		<li class="subdaftar">item 2</li>
+		<li>item 3</li>
+	</ul>
+</div>
+</body>
+</html>
